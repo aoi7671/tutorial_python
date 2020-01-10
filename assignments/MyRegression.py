@@ -1,6 +1,6 @@
 
 
-class MyLinearRegression(BaseEstimator, RegressorMixin):
+class MyRegression(BaseEstimator, RegressorMixin):
 
     def __init__(self, lam = 0,a=0,b=0):
         """
@@ -51,3 +51,6 @@ class MyLinearRegression(BaseEstimator, RegressorMixin):
         y+=self.b_
         
         return y
+if __name__=="__main__":
+
+	clf = MyRegression()
